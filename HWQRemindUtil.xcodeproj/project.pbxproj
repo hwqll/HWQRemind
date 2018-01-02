@@ -15,6 +15,9 @@
 		850775F21FFB641200741C02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 850775F11FFB641200741C02 /* main.m */; };
 		850775FC1FFB641200741C02 /* HWQRemindUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 850775FB1FFB641200741C02 /* HWQRemindUtilTests.m */; };
 		850776071FFB641200741C02 /* HWQRemindUtilUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 850776061FFB641200741C02 /* HWQRemindUtilUITests.m */; };
+		850776191FFB673700741C02 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 850776151FFB673700741C02 /* MBProgressHUD.m */; };
+		8507761A1FFB673700741C02 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 850776161FFB673700741C02 /* MBProgressHUD+Add.m */; };
+		8507761D1FFB674F00741C02 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507761C1FFB674F00741C02 /* UIViewController+HUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		850776021FFB641200741C02 /* HWQRemindUtilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWQRemindUtilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		850776061FFB641200741C02 /* HWQRemindUtilUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWQRemindUtilUITests.m; sourceTree = "<group>"; };
 		850776081FFB641200741C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		850776151FFB673700741C02 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		850776161FFB673700741C02 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		850776171FFB673700741C02 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		850776181FFB673700741C02 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		8507761B1FFB674F00741C02 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		8507761C1FFB674F00741C02 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		850775E11FFB641100741C02 /* HWQRemindUtil */ = {
 			isa = PBXGroup;
 			children = (
+				8507761E1FFB676800741C02 /* Util */,
 				850775E21FFB641100741C02 /* AppDelegate.h */,
 				850775E31FFB641200741C02 /* AppDelegate.m */,
 				850775E51FFB641200741C02 /* ViewController.h */,
@@ -130,6 +140,27 @@
 				850776081FFB641200741C02 /* Info.plist */,
 			);
 			path = HWQRemindUtilUITests;
+			sourceTree = "<group>";
+		};
+		850776141FFB673700741C02 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				850776151FFB673700741C02 /* MBProgressHUD.m */,
+				850776161FFB673700741C02 /* MBProgressHUD+Add.m */,
+				850776171FFB673700741C02 /* MBProgressHUD.h */,
+				850776181FFB673700741C02 /* MBProgressHUD+Add.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		8507761E1FFB676800741C02 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				850776141FFB673700741C02 /* MBProgressHUD */,
+				8507761B1FFB674F00741C02 /* UIViewController+HUD.h */,
+				8507761C1FFB674F00741C02 /* UIViewController+HUD.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8507761D1FFB674F00741C02 /* UIViewController+HUD.m in Sources */,
 				850775E71FFB641200741C02 /* ViewController.m in Sources */,
 				850775F21FFB641200741C02 /* main.m in Sources */,
+				8507761A1FFB673700741C02 /* MBProgressHUD+Add.m in Sources */,
 				850775E41FFB641200741C02 /* AppDelegate.m in Sources */,
+				850776191FFB673700741C02 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
